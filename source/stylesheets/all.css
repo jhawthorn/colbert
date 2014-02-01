@@ -1,55 +1,59 @@
 @charset "utf-8";
 
-body {
-  background: #d4d4d4 url("../images/background.png");
-  text-align: center;
-  font-family: sans-serif; }
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700);
 
-h1 {
-  color: rgba(0, 0, 0, .3);
-  font-weight: bold;
-  font-size: 32px;
-  letter-spacing: -1px;
-  text-transform: uppercase;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
-  background: url("../images/middleman.png") no-repeat center 100px;
-  padding: 350px 0 10px;
-  margin: 0; }
+.notice-board {
+	width: 1280px;
+	height: 720px;
+	background: url('/images/colbert.jpg');
 
-.doc {
-  font-size: 14px;
-  margin: 0; }
-  .doc:before,
-  .doc:after {
-    opacity: .2;
-    padding: 6px;
-    font-style: normal;
-    position: relative;
-    content: "•"; }
-  .doc a {
-    color: rgba(0, 0, 0, 0.3); }
-    .doc a:hover {
-      color: #666; }
+	margin: auto;
 
-.welcome {
-  -webkit-animation-name: welcome;
-  -webkit-animation-duration: .9s; }
-
-@-webkit-keyframes welcome {
-  from {
-    -webkit-transform: scale(0);
-    opacity: 0;
-  }
-  50% {
-   -webkit-transform: scale(0);
-   opacity: 0;
-  }
-  82.5% {
-    -webkit-transform: scale(1.03);
-    -webkit-animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  to {
-    -webkit-transform: scale(1);
-  }
+	/* Needed for absolutely positioned elements within */
+	position: relative;
 }
+
+.notice-board .text {
+	position: absolute;
+	top: 24px;
+	left: 220px;
+
+	width: 310px;
+
+	transform: perspective(800px) rotateY(15deg) rotateZ(0.8deg);
+	perspective-origin: 50% 50%;
+
+	-webkit-transform: perspective(800px) rotateY(15deg) rotateZ(0.8deg);
+	-webkit-perspective-origin: 50% 50%;
+
+	text-align: center;
+
+	/* overflow: hidden; */
+}
+
+.notice-board p {
+	margin: 0px 0 19.7px 0;
+	padding: 0;
+
+	font-family: 'Open Sans Condensed', sans-serif;
+
+	font-stretch: ultra-condensed;
+
+	font-weight: bold;
+	font-size: 38px;
+	line-height: 42px;
+
+	color: #DDDEE7;
+
+	white-space: nowrap;
+	text-transform: uppercase;
+	text-align: center;
+	text-shadow: 0px 0px 4px black, 0px 0px 4px black, 0px 0px 4px black, 0px 0px 4px black, 0px 0px 4px black;
+
+	/* TODO: these can be used in a pinch to squeeze the text together */
+	/*
+	 * -webkit-transform: perspective(0px) rotateY(10deg);
+	 * -webkit-perspective-origin: 50% 50%;
+	 */
+}
+
