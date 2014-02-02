@@ -3,16 +3,17 @@ title: You're on notice
 ---
 
 <div class="notice-board">
-  <div class="text" contenteditable="true">
-    <p>Distractions</p>
-    <p>You Know Who You Are</p>
-    <p>The Weather Channel</p>
-    <p>Black Hole at Center of Galaxy</p>
-    <p>Fantasies of Jane Fonda</p>
-    <p>Grizzly Bears</p>
-    <p>Candy Apples</p>
-    <p>Mike Huckabee</p>
-    <p>Pant Cuffs</p>
-    <p>OK GO</p>
+  <form action="http://colbert.herokuapp.com/generate" method="post">
+    <input type="text" name="text[]" value="Distractions" />
+    <input type="text" name="text[]" value="You Know Who You Are" />
+    <input type="text" name="text[]" value="The Weather Channel" />
+    <input type="text" name="text[]" value="Black Hole at Center of Galaxy" />
+    <input type="text" name="text[]" value="Fantasies of Jane Fonda" />
+    <input type="text" name="text[]" value="Grizzly Bears" />
+    <input type="text" name="text[]" value="Candy Apples" />
+    <input type="text" name="text[]" value="Mike Huckabee" />
+    <input type="text" name="text[]" value="Pant Cuffs" />
+    <input type="text" name="text[]" value="OK GO" />
+    <input type="submit" value="Put 'em on notice!" />
   </div>
 </div>
