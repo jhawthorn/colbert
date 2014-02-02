@@ -58,3 +58,11 @@
 	border-radius: 10px;
 }
 
+.acknowledgments {
+	margin-top: 50px;
+}
+.acknowledgments p {
+	margin: 0;
+	text-align: center;
+}
+
