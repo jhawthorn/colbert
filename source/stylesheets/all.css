@@ -2,6 +2,24 @@
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700);
 
+body {
+	background-color: #141738;
+	color: white;
+	text-align: center;
+}
+
+a{
+	color: #62B4FF;
+	text-decoration: none;
+}
+a:visited{
+	color: #62B4FF;
+}
+
+h1,h3{
+	font-family: sans;
+}
+
 .notice-board {
 	width: 1280px;
 	height: 720px;
@@ -60,6 +78,7 @@
 
 .acknowledgments {
 	margin-top: 50px;
+	color: #BBB;
 }
 .acknowledgments p {
 	margin: 0;
